@@ -1,0 +1,4 @@
+requests==2.25.1
+transformers==4.6.0
+opyrator==0.0.12
+watchdog==2.1.1
