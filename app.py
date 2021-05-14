@@ -13,8 +13,8 @@ class TextSummerizeInput(BaseModel):
 class TextSummerizeOutput(BaseModel):
     output: str
 
-def summerize(input: TextSummerizeInput) -> TextSummerizeOutput:
-    """ Summerize texts """
+def summarizer(input: TextSummerizeInput) -> TextSummerizeOutput:
+    """ Summarize texts """
     tokenizer = PreTrainedTokenizerFast.from_pretrained("hyunwoongko/kobart")
     inputs = tokenizer([tokenizer.bos_token + input.text_input + tokenizer.eos_token])['input_ids'][0]
 

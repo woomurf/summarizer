@@ -7,4 +7,4 @@ RUN pip install -r /app/requirements.txt
 ADD app.py /app
 
 EXPOSE 8051
-CMD ["opyrator", "launch-ui", "app:summerize"]
+CMD ["opyrator", "launch-ui", "app:summarizer"]
